@@ -1,25 +1,25 @@
 public class Mimi {
-    String nameWriter;
+    private Author author;
     String nameBook;
     int ageBook;
 
-     public Mimi(String nameBook, String nameWriter, int ageBook) {
+     public Mimi(String nameBook, Author author, int ageBook) {
          this.nameBook = nameBook;
-         this.nameWriter = nameWriter;
+         this.author = author;
          this.ageBook = ageBook;
      }
 
-     public Mimi (String nameBook, String nameWriter) {
+     public Mimi (String nameBook, Author author) {
         this.nameBook = nameBook;
-         this.nameWriter = nameWriter;
+         this.author = author;
      }
 
     public String getNameBook() {
         return nameBook;
     }
 
-    public String getNameWriter() {
-        return nameWriter;
+    public Author getAuthor() {
+        return author;
     }
 
     public void setAgeBook(int ageBook) {

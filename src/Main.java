@@ -29,15 +29,15 @@ public class Main {
         System.out.println("Задание 6-7");
         Mimi mysticism = new Mimi ("Shadow Clan", "Erin Farron", 2023);
         System.out.print("Название книги: " + mysticism.getNameBook() + ", ");
-        System.out.print(" Автор: " + mysticism.getNameWriter() + ", ");
+        System.out.print(" Автор: " + mysticism.getAuthor() + ", ");
         System.out.print(" год: " + mysticism.ageBook + ". " );
         mysticism.setAgeBook(2022);
         System.out.print(" (год: " + mysticism.ageBook + "). " );
         System.out.println();
 
         Mimi horror = new Mimi("Shiki", "Fuyumi");
-        System.out.print("Название книги: " + horror.nameBook + ", ");
-        System.out.print(" Автор: " + horror.nameWriter + ". ");
+        System.out.print("Название книги: " + horror.getNameBook() + ", ");
+        System.out.print(" Автор: " + horror.getAuthor() + ". ");
         System.out.println();
     }
 }
