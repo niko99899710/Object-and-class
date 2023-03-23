@@ -8,10 +8,9 @@ public class Main {
 
     public static void task_1_3_4_5() {
         System.out.println("Задание 1-3-4-5");
-        Book book = new Book("The glass throne", "Sarah", "Maas", 2012);
+        Book book = new Book("The glass throne","Sarah J. Maas", 2012);
         System.out.print("Название книги: " + book.getName() + ", ");
-        System.out.print(" Имя автора: " + book.getWriter());
-        System.out.print(" Фамилия автора: " + book.getWriter() + ", ");
+        System.out.print(" Aвтор: " + book.getAuthor());
         System.out.print(" год: " + book.age + ". " );
         book.setAge(2020);
         System.out.print(" (год: " + book.age + "). " );
