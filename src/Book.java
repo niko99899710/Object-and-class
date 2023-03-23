@@ -1,21 +1,28 @@
 public class Book {
-    String name;
-    String writer;
+    private String nameBook;
+    private String nameWriter;
+    private String surnameWriter;
     int age;
 
-    public Book (String name1, String writer1, int age1) {
-        this.name = name1;
-        this.writer = writer1;
+    public Book (String nameBook1, String nameWriter1, String surnameWriter1, int age1) {
+        this.nameBook = nameBook1;
+        this.nameWriter = nameWriter1;
+        this.surnameWriter = surnameWriter1;
         this.age = age1;
     }
 
     public String getName() {
-        return this.name;
+        return this.nameBook;
     }
 
     public String getWriter() {
-        return this.writer;
+        return this.nameWriter;
     }
+
+    public String getSurnameWriter() {
+        return surnameWriter;
+    }
+
     public void setAge(int age) {
         this.age= age;
     }
