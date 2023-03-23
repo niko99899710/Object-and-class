@@ -37,7 +37,7 @@ public class Main {
 
         Mimi horror = new Mimi("Shiki", "Fuyumi");
         System.out.print("Название книги: " + horror.nameBook + ", ");
-        System.out.print(" Автор: " + horror.nameWriter + ", ");
+        System.out.print(" Автор: " + horror.nameWriter + ". ");
         System.out.println();
     }
 }
