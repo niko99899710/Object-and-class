@@ -8,4 +8,15 @@ public class Book {
         this.writer = writer1;
         this.age = age1;
     }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String getWriter() {
+        return this.writer;
+    }
+    public void setAge(int age) {
+        this.age= age;
+    }
 }

@@ -1,53 +1,43 @@
 public class Main {
 
     public static void main(String[] args) {
-      //  task1();
-        task1();
-        task2();
-        task3();
-        task4();
-        task5();
-        task6();
-        task7();
+        task_1_3_4_5();
+        task_2_3_4();
+        task_6_7();
     }
 
-    public static void task1() {
-        System.out.println("Задание 1");
+    public static void task_1_3_4_5() {
+        System.out.println("Задание 1-3-4-5");
         Book book = new Book("The glass throne", "Sarah J. Maas", 2012);
-        System.out.print("Название книги: " + book.name + ", ");
-        System.out.print(" Автор: " + book.writer + ", ");
+        System.out.print("Название книги: " + book.getName() + ", ");
+        System.out.print(" Автор: " + book.getWriter() + ", ");
         System.out.print(" год: " + book.age + ". " );
+        book.setAge(2020);
+        System.out.print(" (год: " + book.age + "). " );
         System.out.println();
     }
 
-    public static void task2() {
-        System.out.println("Задание 2");
-        Author sarah = new Author();
-        sarah.name = "Sarah";
-        System.out.print("Имя авторa - " + sarah.name + ", ");
-        sarah.surname = "Maas";
-        System.out.print(" Фамилия автор - " + sarah.surname + ". ");
+    public static void task_2_3_4() {
+        System.out.println("Задание 2-3-4");
+        Author sarah = new Author("Sarah", "Maas");
+        System.out.print("Имя авторa - " + sarah.getName() + ", ");
+        System.out.print(" Фамилия авторa - " + sarah.getSurname() + ". ");
         System.out.println();
     }
 
-    public static void task3() {
-        System.out.println("Задание 3");
-    }
+    public static void task_6_7() {
+        System.out.println("Задание 6-7");
+        Mimi mysticism = new Mimi ("Shadow Clan", "Erin Farron", 2023);
+        System.out.print("Название книги: " + mysticism.getNameBook() + ", ");
+        System.out.print(" Автор: " + mysticism.getNameWriter() + ", ");
+        System.out.print(" год: " + mysticism.ageBook + ". " );
+        mysticism.setAgeBook(2022);
+        System.out.print(" (год: " + mysticism.ageBook + "). " );
+        System.out.println();
 
-    public static void task4() {
-        System.out.println("Задание 4");
+        Mimi horror = new Mimi("Shiki", "Fuyumi");
+        System.out.print("Название книги: " + horror.nameBook + ", ");
+        System.out.print(" Автор: " + horror.nameWriter + ", ");
+        System.out.println();
     }
-
-    public static void task5() {
-        System.out.println("Задание 5");
-    }
-
-    public static void task6() {
-        System.out.println("Задание 6");
-    }
-
-    public static void task7() {
-        System.out.println("Задание 7");
-    }
-
 }
